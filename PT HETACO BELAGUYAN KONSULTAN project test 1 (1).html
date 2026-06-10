@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT HETACO BELAGUYAN KONSULTAN</title>
+  <meta name="description" content="PT HETACO BELAGUYAN KONSULTAN — Corporate Solutions | ESDM Investment &amp; Project Advisory | 企业咨询顾问服务">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./PT HETACO BELAGUYAN KONSULTAN project test 1_files/css2" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --paper:#ffffff;
+      --ink:#0c1830;
+      --muted:#56657f;
+      --line:rgba(12,24,48,.1);
+      --blue:#1f7fe5;
+      --cyan:#49d6e5;
+      --navy:#152a7a;
+      --accent:#0ea5c6;
+      --shadow:0 20px 60px rgba(18, 38, 94, .12);
+      --radius:24px;
+      --max:1240px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope', sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 10% 15%, rgba(73,214,229,.12), transparent 28%),
+        radial-gradient(circle at 88% 80%, rgba(31,127,229,.10), transparent 25%),
+        linear-gradient(180deg, #fbfcfe 0%, #f2f5fa 100%);
+      overflow-x:hidden;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(calc(100% - 2rem), var(--max)); margin-inline:auto}
+
+    .reveal{
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .8s ease, transform .8s ease;
+    }
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(16px);
+      background:rgba(255,255,255,.75);
+      border-bottom:1px solid rgba(12,24,48,.08);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      min-height:76px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.9rem;
+      min-width:0;
+    }
+    .brand-mark{
+      width:48px;height:48px;flex:0 0 48px;
+      border-radius:16px;
+      position:relative;
+      background:
+        linear-gradient(145deg, rgba(73,214,229,.2), rgba(31,127,229,.08));
+      border:1px solid rgba(31,127,229,.15);
+      overflow:hidden;
+    }
+    .brand-mark svg{
+      position:absolute; inset:4px;
+      width:calc(100% - 8px); height:calc(100% - 8px);
+    }
+    .brand-text{
+      min-width:0;
+    }
+    .brand-text .name{
+      font-family:'Space Grotesk', sans-serif;
+      font-weight:700;
+      letter-spacing:.02em;
+      font-size:.95rem;
+      line-height:1.1;
+    }
+    .brand-text .tag{
+      font-size:.72rem;
+      color:var(--muted);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:48vw;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:1.2rem;
+      align-items:center;
+    }
+    .nav-links a{
+      color:var(--muted);
+      font-weight:700;
+      font-size:.92rem;
+      position:relative;
+    }
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0; bottom:-8px;
+      width:0; height:2px;
+      background:linear-gradient(90deg, var(--cyan), var(--blue));
+      transition:width .28s ease;
+    }
+    .nav-links a:hover::after{width:100%}
+    .nav-cta{
+      padding:.9rem 1.15rem;
+      border-radius:999px;
+      background:linear-gradient(135deg, var(--cyan), var(--blue));
+      color:#fff;
+      font-weight:800;
+      box-shadow:0 14px 30px rgba(31,127,229,.22);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .nav-cta:hover{transform:translateY(-2px); box-shadow:0 18px 38px rgba(31,127,229,.28)}
+
+    .menu-btn{
+      display:none;
+      border:none;
+      background:transparent;
+      width:46px;height:46px;
+      border-radius:12px;
+      padding:0;
+      cursor:pointer;
+    }
+    .menu-btn span{
+      display:block;
+      width:22px;height:2px;
+      background:var(--ink);
+      margin:5px auto;
+      transition:.25s ease;
+    }
+
+    .hero{
+      position:relative;
+      padding:clamp(2rem, 4vw, 4rem) 0 3rem;
+      overflow:hidden;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:2rem;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.6rem;
+      padding:.55rem .9rem;
+      border-radius:999px;
+      background:rgba(255,255,255,.72);
+      border:1px solid rgba(12,24,48,.08);
+      color:var(--navy);
+      font-weight:800;
+      font-size:.78rem;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      box-shadow:var(--shadow);
+      animation:fadeUp .8s ease both;
+    }
+    .eyebrow::before{
+      content:"";
+      width:10px;height:10px;border-radius:50%;
+      background:linear-gradient(135deg, var(--cyan), var(--blue));
+      box-shadow:0 0 0 6px rgba(73,214,229,.12);
+    }
+
+    h1{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(2.5rem, 6vw, 5.4rem);
+      line-height:.95;
+      letter-spacing:-.04em;
+      margin:1rem 0 1rem;
+      max-width:12ch;
+      animation:fadeUp .9s ease .08s both;
+    }
+    .hero p.lead{
+      font-size:clamp(1rem, 1.7vw, 1.24rem);
+      line-height:1.7;
+      color:var(--muted);
+      max-width:62ch;
+      margin:0 0 1.5rem;
+      animation:fadeUp .9s ease .16s both;
+    }
+    .hero-actions{
+      display:flex;
+      gap:.9rem;
+      flex-wrap:wrap;
+      animation:fadeUp .9s ease .24s both;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.65rem;
+      padding:1rem 1.2rem;
+      border-radius:16px;
+      font-weight:800;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+      will-change:transform;
+    }
+    .btn:active{transform:translateY(1px) scale(.99)}
+    .btn-primary{
+      background:linear-gradient(135deg, var(--blue), var(--navy));
+      color:#fff;
+      box-shadow:0 16px 36px rgba(21,42,122,.2);
+    }
+    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-secondary{
+      background:rgba(255,255,255,.7);
+      border:1px solid rgba(12,24,48,.08);
+      color:var(--ink);
+      backdrop-filter:blur(12px);
+    }
+    .btn-secondary:hover{transform:translateY(-2px); box-shadow:var(--shadow)}
+
+    .hero-right{
+      position:relative;
+      min-height:540px;
+      display:grid;
+      place-items:center;
+    }
+
+    .signature-panel{
+      position:relative;
+      width:min(100%, 520px);
+      aspect-ratio: 1 / 1.06;
+      border-radius:32px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.96), rgba(246,248,251,.92));
+      border:1px solid rgba(12,24,48,.08);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      animation:fadeUp 1s ease .14s both;
+    }
+    .signature-panel::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg, transparent 0 66%, rgba(31,127,229,.03) 66% 100%);
+      pointer-events:none;
+    }
+    .corner-art{
+      position:absolute;
+      right:-2%;
+      bottom:-2%;
+      width:44%;
+      height:34%;
+      pointer-events:none;
+    }
+    .corner-art .shape{
+      position:absolute;
+      right:0; bottom:0;
+      transform-origin:bottom right;
+      border-radius:4px;
+      box-shadow:0 8px 18px rgba(21,42,122,.14);
+    }
+    .shape.s1{width:84%; height:16%; background:#1d18aa; transform:skew(-34deg) rotate(-34deg) translate(0,0)}
+    .shape.s2{width:76%; height:15%; background:#2f7df2; transform:skew(-34deg) rotate(-34deg) translate(-18px,-26px)}
+    .shape.s3{width:68%; height:14%; background:#51d7e3; transform:skew(-34deg) rotate(-34deg) translate(-38px,-53px)}
+    .shape.s4{width:54%; height:3px; background:#35b8d2; transform:skew(-34deg) rotate(-34deg) translate(-52px,-92px); box-shadow:none}
+    .shape.s5{width:44%; height:3px; background:#243b8f; transform:skew(-34deg) rotate(-34deg) translate(-6px,-132px); box-shadow:none}
+
+    .logo-wrap{
+      position:absolute;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:2rem;
+    }
+    .logo-mark{
+      width:min(230px, 42%);
+      margin-inline:auto;
+      filter:drop-shadow(0 18px 18px rgba(31,127,229,.12));
+    }
+    .logo-shadow{
+      width:120px;
+      height:16px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(12,24,48,.2), rgba(12,24,48,0) 70%);
+      margin:.4rem auto 1.2rem;
+      opacity:.14;
+      transform:translateY(-6px);
+    }
+    .logo-title{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.9rem, 3vw, 3.15rem);
+      line-height:1.02;
+      letter-spacing:.08em;
+      color:#22345c;
+      font-weight:500;
+      margin:0;
+    }
+    .divider{
+      width:min(280px, 78%);
+      height:2px;
+      background:#1f2330;
+      margin:1rem auto .75rem;
+    }
+    .subcopy{
+      color:#4d5a77;
+      font-size:clamp(.86rem, 1.3vw, 1rem);
+      line-height:1.6;
+    }
+    .subcopy .cn{
+      letter-spacing:.02em;
+      white-space:nowrap;
+    }
+    .subcopy + .subcopy{
+      margin-top:.35rem;
+      color:#6a7894;
+    }
+
+    .contact-float{
+      position:absolute;
+      left:-3%;
+      top:8%;
+      width:min(360px, 80%);
+      background:rgba(255,255,255,.86);
+      border:1px solid rgba(12,24,48,.08);
+      backdrop-filter: blur(18px);
+      box-shadow:0 24px 50px rgba(18,38,94,.12);
+      border-radius:24px;
+      padding:1.15rem 1.15rem 1rem;
+      animation:fadeUp 1s ease .3s both;
+    }
+    .contact-float .mini{
+      font-size:.92rem;
+      color:#243b8f;
+      font-weight:800;
+      margin-bottom:.7rem;
+      letter-spacing:.02em;
+    }
+    .contact-float .line{
+      color:#31415f;
+      font-size:.92rem;
+      line-height:1.55;
+    }
+
+    .section{
+      padding:clamp(3rem, 7vw, 6rem) 0;
+    }
+    .section-head{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:2rem;
+      align-items:end;
+      margin-bottom:2rem;
+    }
+    .kicker{
+      font-family:'Space Grotesk', sans-serif;
+      color:var(--blue);
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      margin-bottom:.9rem;
+    }
+    .section h2{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.8rem, 4vw, 3.3rem);
+      line-height:1;
+      letter-spacing:-.04em;
+      margin:0;
+      max-width:14ch;
+    }
+    .section .intro{
+      color:var(--muted);
+      font-size:1.04rem;
+      line-height:1.8;
+      max-width:64ch;
+    }
+
+    .overview-layout{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:1.5rem;
+      align-items:stretch;
+    }
+    .statement{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:32px;
+      box-shadow:var(--shadow);
+      padding:clamp(1.4rem, 3vw, 2.2rem);
+      position:relative;
+      overflow:hidden;
+    }
+    .statement::before{
+      content:"";
+      position:absolute;
+      inset:auto auto 0 0;
+      width:180px;height:180px;
+      background:radial-gradient(circle, rgba(73,214,229,.18), transparent 68%);
+      pointer-events:none;
+    }
+    .quote{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.35rem, 2vw, 2rem);
+      line-height:1.35;
+      margin:0 0 1.2rem;
+      letter-spacing:-.03em;
+    }
+    .statement p{
+      color:var(--muted);
+      line-height:1.8;
+      margin:0;
+    }
+
+    .stats-strip{
+      display:grid;
+      gap:1rem;
+      align-content:start;
+    }
+    .stat{
+      background:linear-gradient(180deg, #fefefe, #f6f9fd);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:1.2rem 1.15rem;
+      box-shadow:var(--shadow);
+    }
+    .stat strong{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:2rem;
+      display:block;
+      letter-spacing:-.04em;
+      color:var(--navy);
+    }
+    .stat span{
+      color:var(--muted);
+      line-height:1.6;
+      display:block;
+      margin-top:.25rem;
+    }
+
+    .advantage-shell{
+      border-radius:34px;
+      background:#1f2426;
+      color:#fff;
+      padding:1rem;
+      box-shadow:0 24px 60px rgba(0,0,0,.18);
+      position:relative;
+      overflow:hidden;
+    }
+    .advantage-shell::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(255,255,255,.04), transparent 22%),
+        radial-gradient(circle at 85% 85%, rgba(73,214,229,.08), transparent 26%);
+      pointer-events:none;
+    }
+    .advantage-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:1rem;
+      padding:1.2rem 1.2rem 1.3rem;
+    }
+    .advantage-head h3{
+      margin:0;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.5rem, 3vw, 2.5rem);
+      line-height:1.02;
+      letter-spacing:-.04em;
+      max-width:13ch;
+    }
+    .advantage-head p{
+      margin:0;
+      color:rgba(255,255,255,.72);
+      max-width:52ch;
+      line-height:1.7;
+    }
+
+    .comparison{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.02);
+    }
+    .comparison th,
+    .comparison td{
+      text-align:left;
+      vertical-align:top;
+      padding:1.25rem;
+      border-right:1px solid rgba(255,255,255,.1);
+      border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    .comparison th:last-child,
+    .comparison td:last-child{border-right:none}
+    .comparison tr:last-child td{border-bottom:none}
+    .comparison th{
+      background:rgba(255,255,255,.08);
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1rem, 1.8vw, 1.7rem);
+      letter-spacing:-.03em;
+    }
+    .comparison td:first-child{
+      font-weight:800;
+      font-size:clamp(1rem, 1.7vw, 1.35rem);
+      width:40%;
+    }
+    .comparison td:last-child{
+      color:rgba(255,255,255,.88);
+      font-size:clamp(1rem, 1.7vw, 1.28rem);
+      line-height:1.45;
+    }
+
+    .services-flow{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:1rem;
+      align-items:stretch;
+    }
+    .service{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      padding:1.25rem;
+      min-height:220px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      position:relative;
+      overflow:hidden;
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    .service:hover{
+      transform:translateY(-6px);
+      box-shadow:0 28px 50px rgba(18,38,94,.14);
+    }
+    .service::before{
+      content:"";
+      position:absolute;
+      inset:auto -20% -24% auto;
+      width:120px;height:120px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(73,214,229,.26), rgba(73,214,229,0) 70%);
+      pointer-events:none;
+    }
+    .service .num{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:.85rem;
+      color:var(--blue);
+      font-weight:700;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    .service h3{
+      margin:.8rem 0 .6rem;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:1.2rem;
+      line-height:1.15;
+      letter-spacing:-.03em;
+    }
+    .service p{
+      color:var(--muted);
+      line-height:1.7;
+      font-size:.96rem;
+      margin:0;
+    }
+
+    .leadership-wrap{
+      display:grid;
+      grid-template-columns:1fr 1.2fr;
+      gap:1.4rem;
+      align-items:start;
+    }
+    .leadership-feature{
+      background:linear-gradient(160deg, #163071, #1f7fe5 60%, #52d5e4 130%);
+      color:#fff;
+      border-radius:32px;
+      padding:clamp(1.5rem, 3vw, 2.3rem);
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+      min-height:100%;
+    }
+    .leadership-feature::before{
+      content:"";
+      position:absolute;
+      right:-60px; top:-60px;
+      width:220px;height:220px;border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+    .leadership-feature .mini{
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:.8rem;
+      font-weight:800;
+      opacity:.88;
+    }
+    .leadership-feature h3{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.8rem, 3vw, 2.8rem);
+      line-height:1.02;
+      letter-spacing:-.04em;
+      margin:.8rem 0 1rem;
+      max-width:12ch;
+    }
+    .leadership-feature p{
+      color:rgba(255,255,255,.86);
+      line-height:1.8;
+      margin:0;
+      max-width:40ch;
+    }
+
+    .leaders{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:1rem;
+    }
+    .leader{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:1.2rem;
+      box-shadow:var(--shadow);
+    }
+    .leader .role{
+      color:var(--blue);
+      font-weight:800;
+      font-size:.82rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      margin-bottom:.55rem;
+    }
+    .leader h4{
+      margin:0 0 .35rem;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:1.4rem;
+      letter-spacing:-.03em;
+      line-height:1.1;
+    }
+    .leader p{
+      color:var(--muted);
+      margin:0;
+      line-height:1.7;
+      font-size:.96rem;
+    }
+    .ops-band{
+      margin-top:1rem;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:28px;
+      padding:1.2rem;
+      box-shadow:var(--shadow);
+    }
+    .ops-band .title{
+      font-family:'Space Grotesk', sans-serif;
+      font-size:1.1rem;
+      margin:0 0 .8rem;
+      letter-spacing:-.02em;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.65rem;
+    }
+    .chip{
+      padding:.75rem .95rem;
+      border-radius:999px;
+      background:linear-gradient(180deg, #f9fbff, #f0f5fc);
+      border:1px solid rgba(31,127,229,.12);
+      color:#294265;
+      font-weight:700;
+      font-size:.9rem;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr .9fr;
+      gap:1.3rem;
+      align-items:stretch;
+    }
+    .contact-panel{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:32px;
+      box-shadow:var(--shadow);
+      padding:clamp(1.4rem, 3vw, 2rem);
+      position:relative;
+      overflow:hidden;
+    }
+    .contact-panel::after{
+      content:"";
+      position:absolute;
+      right:-50px;
+      bottom:-50px;
+      width:180px;height:180px;border-radius:50%;
+      background:radial-gradient(circle, rgba(31,127,229,.12), rgba(31,127,229,0) 72%);
+      pointer-events:none;
+    }
+    .contact-panel h3{
+      margin:0 0 .8rem;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:1.7rem;
+      letter-spacing:-.03em;
+    }
+    .contact-list{
+      display:grid;
+      gap:.9rem;
+      margin-top:1rem;
+    }
+    .contact-item{
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:.8rem;
+      align-items:start;
+      padding:.9rem 0;
+      border-top:1px solid rgba(12,24,48,.08);
+    }
+    .contact-item:first-child{border-top:none;padding-top:0}
+    .contact-item strong{
+      color:#243b8f;
+      font-size:.9rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .contact-item span{
+      color:var(--muted);
+      line-height:1.7;
+    }
+
+    .commitment{
+      background:linear-gradient(135deg, #12192c 0%, #1a2f6d 55%, #1f7fe5 100%);
+      color:#fff;
+      border-radius:32px;
+      padding:2rem;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height:100%;
+      position:relative;
+      overflow:hidden;
+    }
+    .commitment::before{
+      content:"";
+      position:absolute;
+      inset:auto auto -30px -30px;
+      width:160px;height:160px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+    .commitment .small{
+      font-size:.8rem;
+      font-weight:800;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      opacity:.86;
+    }
+    .commitment blockquote{
+      margin:1rem 0 0;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:clamp(1.8rem, 3.2vw, 2.8rem);
+      line-height:1.05;
+      letter-spacing:-.04em;
+    }
+
+    footer{
+      padding:1.4rem 0 2.5rem;
+      color:#6b7892;
+      font-size:.92rem;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0; transform:translateY(28px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    @media (max-width: 1080px){
+      .hero-grid,
+      .section-head,
+      .overview-layout,
+      .leadership-wrap,
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+      .services-flow{
+        grid-template-columns:repeat(2,1fr);
+      }
+      .hero-right{min-height:auto; padding-top:1rem}
+      .contact-float{
+        position:relative;
+        left:auto; top:auto;
+        width:100%;
+        margin-bottom:1rem;
+      }
+      .signature-panel{width:100%}
+    }
+
+    @media (max-width: 760px){
+      .nav-links{
+        position:fixed;
+        inset:76px 1rem auto 1rem;
+        background:rgba(255,255,255,.92);
+        backdrop-filter:blur(16px);
+        border:1px solid rgba(12,24,48,.08);
+        border-radius:24px;
+        box-shadow:var(--shadow);
+        padding:1rem;
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .nav-links.open{display:flex}
+      .menu-btn{display:block}
+      .nav-cta{display:none}
+      .leaders{grid-template-columns:1fr}
+      .comparison th,
+      .comparison td{padding:1rem}
+      .services-flow{grid-template-columns:1fr}
+      .contact-item{
+        grid-template-columns:1fr;
+        gap:.35rem;
+      }
+      .brand-text .tag{max-width:60vw}
+      .section{padding:3.4rem 0}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+      .reveal{opacity:1; transform:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#home" class="brand" aria-label="PT HETACO BELAGUYAN KONSULTAN home">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <lineargradient id="g1" x1="12" y1="60" x2="104" y2="20" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0F2A61"></stop>
+                <stop offset="0.48" stop-color="#1F7FE5"></stop>
+                <stop offset="1" stop-color="#56D8E6"></stop>
+              </lineargradient>
+              <lineargradient id="g2" x1="28" y1="86" x2="90" y2="72" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0F2A61"></stop>
+                <stop offset="1" stop-color="#66CFF1"></stop>
+              </lineargradient>
+            </defs>
+            
+            
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="name">PT HETACO BELAGUYAN KONSULTAN</div>
+          <div class="tag">Corporate Solutions | ESDM Investment &amp; Project Advisory</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navMenu" aria-label="Primary navigation">
+        <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#overview">Overview</a>
+        <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#advantages">Advantages</a>
+        <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#services">Services</a>
+        <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#leadership">Leadership</a>
+        <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#contact">Contact Us</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Trusted Advisory for Indonesia Projects</div>
+          <h1>Engineering Trust. Delivering Growth.</h1>
+          <p class="lead">
+            PT HETACO BELAGUYAN KONSULTAN is a Jakarta-based consulting firm specializing in mining,
+            energy, infrastructure, and industrial sectors. We provide end-to-end project advisory,
+            licensing support, feasibility structuring, EPC oversight, and cross-border investment solutions
+            for ESDM-focused initiatives.
+          </p>
+          <div class="hero-actions">
+            <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#advantages" class="btn btn-primary">Explore Company Profile</a>
+            <a href="file:///C:/Users/ASUS/Downloads/DOCTYPE%20(1).html#contact" class="btn btn-secondary">Request Consultation</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="contact-float">
+            <div class="mini">Direct Contact</div>
+            <div class="line">+62 878 8787 7705</div>
+            <div class="line">belina.andra@yahoo.com</div>
+            <div class="line" style="margin-top:.6rem;">
+              <strong>PT. HETACO BELAGUYAN Konsultan</strong><br>
+              Jl. Sigura-gura II, RT.11/RW.1, Duren Tiga,<br>
+              Kec. Pancoran, South Jakarta, 12760
+            </div>
+          </div>
+
+          <div class="signature-panel" aria-label="Company visual identity">
+            <div class="logo-wrap">
+              <svg class="logo-mark" viewBox="0 0 420 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hetaco Belaguyan logo">
+                <defs>
+                  <lineargradient id="heroG1" x1="40" y1="140" x2="330" y2="50" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#0E2B5D"></stop>
+                    <stop offset=".5" stop-color="#1D8DE9"></stop>
+                    <stop offset="1" stop-color="#58D9E5"></stop>
+                  </lineargradient>
+                  <lineargradient id="heroG2" x1="80" y1="230" x2="240" y2="180" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#0E2B5D"></stop>
+                    <stop offset="1" stop-color="#68CFF0"></stop>
+                  </lineargradient>
+                </defs>
+                
+                
+              </svg>
+              <div class="logo-shadow"></div>
+              <h2 class="logo-title">HETACO<br>BELAGUYAN</h2>
+              <div class="divider"></div>
+              <div class="subcopy">Corporate Solutions <span class="cn">企业咨询顾问服务</span></div>
+              <div class="subcopy">ESDM 招商引资工作先进单位</div>
+            </div>
+
+            <div class="corner-art" aria-hidden="true">
+              <div class="shape s1"></div>
+              <div class="shape s2"></div>
+              <div class="shape s3"></div>
+              <div class="shape s4"></div>
+              <div class="shape s5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section-head reveal visible" style="transition-delay: 0ms;">
+          <div>
+            <div class="kicker">Company Overview</div>
+            <h2>Strategic advisory built for complex investment environments.</h2>
+          </div>
+          <p class="intro">
+            Navigating Indonesia’s project landscape requires more than technical knowledge—it requires a partner
+            who understands regulation, execution, stakeholder alignment, and investment timing. We help investors
+            move from feasibility to implementation with confidence.
+          </p>
+        </div>
+
+        <div class="overview-layout">
+          <article class="statement reveal visible" style="transition-delay: 60ms;">
+            <p class="quote">
+              PT HETACO BELAGUYAN KONSULTAN is a recognized project consulting partner for mining, energy,
+              infrastructure, and industrial initiatives—especially where ESDM compliance and investment readiness matter most.
+            </p>
+            <p>
+              Our role is to simplify complexity: licensing, due diligence, project structuring, EPC management,
+              government coordination, and foreign investor advisory. We de-risk project journeys and accelerate
+              decision-making with practical, bankable, and regulator-aligned solutions.
+            </p>
+          </article>
+
+          <div class="stats-strip">
+            <div class="stat reveal visible" style="transition-delay: 120ms;">
+              <strong>ESDM</strong>
+              <span>Specialized support for investment, licensing, permits, and compliance pathways.</span>
+            </div>
+            <div class="stat reveal visible" style="transition-delay: 180ms;">
+              <strong>95%</strong>
+              <span>Project execution performance aligned with critical deadlines and financial targets.</span>
+            </div>
+            <div class="stat reveal visible" style="transition-delay: 240ms;">
+              <strong>ID – CN</strong>
+              <span>Corporate bridge for China–Indonesia collaboration and bilingual advisory support.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="container">
+        <div class="advantage-shell reveal visible" style="transition-delay: 300ms;">
+          <div class="advantage-head">
+            <h3>Why Global Investors Choose Us</h3>
+            <p>
+              A presentation-ready overview of what we handle and the results clients can expect across
+              advisory, licensing, project packaging, and execution oversight.
+            </p>
+          </div>
+
+          <table class="comparison" aria-label="Why global investors choose us">
+            <thead>
+              <tr>
+                <th>We Handle</th>
+                <th>So You Get</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ESDM Licensing &amp; Permits</td>
+                <td>Fast-track approvals, clear compliance pathways, and reduced regulatory friction.</td>
+              </tr>
+              <tr>
+                <td>Bankable Feasibility Studies</td>
+                <td>Projects structured for lender confidence, stakeholder alignment, and investment readiness.</td>
+              </tr>
+              <tr>
+                <td>EPC Management &amp; Oversight</td>
+                <td>95% on-time, on-budget execution performance with stronger governance and accountability.</td>
+              </tr>
+              <tr>
+                <td>Government Relations</td>
+                <td>Access, coordination, and smoother engagement at ministry and local authority levels.</td>
+              </tr>
+              <tr>
+                <td>China–Indonesia Bridge</td>
+                <td>企业咨询顾问服务 + bilingual corporate advisory for cross-border investors and partners.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal visible" style="transition-delay: 320ms;">
+          <div>
+            <div class="kicker">Core Services</div>
+            <h2>End-to-end consulting across project lifecycle and investor needs.</h2>
+          </div>
+          <p class="intro">
+            Our service model is designed around high-value industrial projects that require technical rigor,
+            regulatory precision, and commercial clarity.
+          </p>
+        </div>
+
+        <div class="services-flow">
+          <article class="service reveal visible" style="transition-delay: 320ms;">
+            <div class="num">01</div>
+            <div>
+              <h3>Project Feasibility Studies &amp; Due Diligence</h3>
+              <p>Technical, financial, and strategic assessments that support investment decisions and project bankability.</p>
+            </div>
+          </article>
+
+          <article class="service reveal visible" style="transition-delay: 320ms;">
+            <div class="num">02</div>
+            <div>
+              <h3>Licensing, Permits &amp; ESDM Compliance</h3>
+              <p>Specialized advisory for mining permits, energy licensing, and end-to-end compliance navigation.</p>
+            </div>
+          </article>
+
+          <article class="service reveal visible" style="transition-delay: 320ms;">
+            <div class="num">03</div>
+            <div>
+              <h3>EPC Management &amp; Contractor Oversight</h3>
+              <p>Structured monitoring and implementation control to maintain schedule, scope, quality, and cost targets.</p>
+            </div>
+          </article>
+
+          <article class="service reveal visible" style="transition-delay: 320ms;">
+            <div class="num">04</div>
+            <div>
+              <h3>Investment Risk Mitigation &amp; Government Relations</h3>
+              <p>Proactive issue mapping, stakeholder engagement, and strategic coordination to lower project risk.</p>
+            </div>
+          </article>
+
+          <article class="service reveal visible" style="transition-delay: 320ms;">
+            <div class="num">05</div>
+            <div>
+              <h3>Corporate Solutions for Foreign Investors</h3>
+              <p>Tailored entry strategies, cross-border advisory, and operational support for international partners.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="leadership">
+      <div class="container">
+        <div class="leadership-wrap">
+          <div class="leadership-feature reveal visible" style="transition-delay: 320ms;">
+            <div class="mini">Leadership</div>
+            <h3>Experienced direction for disciplined growth.</h3>
+            <p>
+              Our leadership reflects the firm’s commitment to trust, execution, and long-term value creation.
+              Built for publication and corporate presentation use.
+            </p>
+          </div>
+
+          <div>
+            <div class="leaders">
+              <article class="leader reveal visible" style="transition-delay: 320ms;">
+                <div class="role">Komisaris Utama</div>
+                <h4>Mrs. Belina Andra</h4>
+                <p>Providing strategic oversight, corporate stewardship, and institutional direction for the company.</p>
+              </article>
+
+              <article class="leader reveal visible" style="transition-delay: 320ms;">
+                <div class="role">President Direktur</div>
+                <h4>Mr. Gurhadi Kartasasmita</h4>
+                <p>Leading company growth, executive management, and strategic execution across advisory operations.</p>
+              </article>
+            </div>
+
+            <div class="ops-band reveal visible" style="transition-delay: 320ms;">
+              <h3 class="title">Jajaran Direktur Operasional Team Hetaco Belaguyan</h3>
+              <div class="chips">
+                <div class="chip">Operational Leadership</div>
+                <div class="chip">Project Coordination</div>
+                <div class="chip">Regulatory Support</div>
+                <div class="chip">EPC Oversight</div>
+                <div class="chip">Investor Relations</div>
+                <div class="chip">Corporate Advisory</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-panel reveal visible" style="transition-delay: 320ms;">
+            <div class="kicker">Contact Us</div>
+            <h3>Let’s discuss your next strategic project.</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <strong>Company</strong>
+                <span>PT. HETACO BELAGUYAN Konsultan</span>
+              </div>
+              <div class="contact-item">
+                <strong>Address</strong>
+                <span>Jl. Sigura-gura II, RT.11/RW.1, Duren Tiga, Kec. Pancoran, South Jakarta, 12760, Indonesia</span>
+              </div>
+              <div class="contact-item">
+                <strong>Email</strong>
+                <span>HETAbelaguyan@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <strong>Phone</strong>
+                <span>+62 878 8787 7705</span>
+              </div>
+              <div class="contact-item">
+                <strong>Commissioner</strong>
+                <span>Mrs. Belina Andra</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="commitment reveal visible" aria-label="Our commitment" style="transition-delay: 320ms;">
+            <div class="small">Our Commitment</div>
+            <blockquote>Engineering Trust. Delivering Growth.</blockquote>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      All Rights Reserved @2025 — PT HETACO BELAGUYAN KONSULTAN
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    if (menuBtn && navMenu) {
+      menuBtn.addEventListener('click', () => {
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!expanded));
+        navMenu.classList.toggle('open');
+      });
+
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, index) => {
+      el.style.transitionDelay = `${Math.min(index * 60, 320)}ms`;
+      observer.observe(el);
+    });
+  </script>
+
+
+</body></html>
