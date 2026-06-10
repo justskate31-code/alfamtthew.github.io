@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)file:///D:/pt/final%20chapter/PT%20HETACO%20BELAGUYAN%20KONSULTAN%20%E2%80%94%20Company%20Profile%20Presentation.html -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT HETACO BELAGUYAN KONSULTAN — Company Profile Presentation</title>
+  <meta name="description" content="Company Profile Presentation PT HETACO BELAGUYAN KONSULTAN - Corporate Solutions | ESDM Investment &amp; Project Advisory">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./PT HETACO BELAGUYAN KONSULTAN 22— Company Profile Presentation_files/css2" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0d1114;
+      --bg-soft:#13191d;
+      --panel:#171e23;
+      --panel-2:#1d252b;
+      --text:#f4f7fa;
+      --muted:#aeb9c3;
+      --line:rgba(255,255,255,.12);
+      --teal:#5ed3df;
+      --cyan:#2fa8ff;
+      --blue:#2448ff;
+      --accent:#7ce7ff;
+      --white:#ffffff;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --radius:24px;
+      --radius-sm:16px;
+      --max:1400px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Manrope", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(94,211,223,.08), transparent 25%),
+        radial-gradient(circle at 100% 20%, rgba(36,72,255,.10), transparent 30%),
+        linear-gradient(180deg, #0b0f12 0%, #0d1114 100%);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size:32px 32px;
+      mask-image:radial-gradient(circle at center, black 35%, transparent 85%);
+      opacity:.5;
+    }
+
+    .deck{
+      width:min(100%, var(--max));
+      margin:0 auto;
+      padding:28px 18px 80px;
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(18px);
+      background:rgba(11,15,18,.72);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .topbar-inner{
+      width:min(100%, var(--max));
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .brand-mini{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .brand-mini svg{flex:0 0 42px}
+    .brand-mini-text{
+      min-width:0;
+    }
+    .brand-mini-text strong{
+      display:block;
+      font-family:"Space Grotesk", sans-serif;
+      font-size:.95rem;
+      letter-spacing:.03em;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    .brand-mini-text span{
+      display:block;
+      color:var(--muted);
+      font-size:.78rem;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .nav-dots{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .nav-dots a{
+      color:var(--muted);
+      text-decoration:none;
+      font-size:.78rem;
+      padding:8px 12px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:999px;
+      transition:.25s ease;
+      background:rgba(255,255,255,.02);
+    }
+
+    .nav-dots a:hover{
+      color:var(--white);
+      border-color:rgba(124,231,255,.35);
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(47,168,255,.12);
+    }
+
+    .slide{
+      min-height:100svh;
+      display:grid;
+      align-items:center;
+      padding:32px 0;
+      position:relative;
+    }
+
+    .frame{
+      position:relative;
+      overflow:hidden;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)),
+        rgba(19,25,29,.78);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:32px;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(14px);
+    }
+
+    .frame::before{
+      content:"";
+      position:absolute;
+      inset:-1px;
+      background:
+        linear-gradient(125deg, rgba(124,231,255,.18), transparent 24%, transparent 76%, rgba(36,72,255,.16));
+      pointer-events:none;
+      border-radius:inherit;
+    }
+
+    .slide-inner{
+      position:relative;
+      z-index:1;
+      padding:clamp(26px, 4vw, 52px);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:.75rem;
+      font-weight:800;
+      margin-bottom:18px;
+    }
+
+    .eyebrow::before{
+      content:"";
+      width:42px;
+      height:1px;
+      background:linear-gradient(90deg, var(--teal), transparent);
+    }
+
+    h1,h2,h3{
+      font-family:"Space Grotesk", sans-serif;
+      line-height:.95;
+      margin:0;
+      letter-spacing:-.03em;
+    }
+
+    h1{font-size:clamp(2.3rem, 7vw, 6.2rem)}
+    h2{font-size:clamp(1.8rem, 4.6vw, 4rem)}
+    h3{font-size:clamp(1.1rem, 2.2vw, 1.6rem)}
+
+    p{
+      margin:0;
+      color:var(--muted);
+      font-size:clamp(.98rem, 1.3vw, 1.08rem);
+      line-height:1.75;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:stretch;
+    }
+
+    .hero-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:28px;
+    }
+
+    .hero-title-wrap{
+      max-width:900px;
+    }
+
+    .hero-title-wrap .sub{
+      margin-top:18px;
+      font-size:clamp(1.1rem, 2vw, 1.5rem);
+      color:#d6e3ed;
+      max-width:760px;
+    }
+
+    .hero-title-wrap .cn{
+      margin-top:12px;
+      color:var(--accent);
+      font-weight:700;
+      letter-spacing:.06em;
+      font-size:clamp(.92rem, 1.6vw, 1.1rem);
+    }
+
+    .hero-stats{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
+    }
+
+    .stat{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      min-height:120px;
+    }
+
+    .stat strong{
+      display:block;
+      font-family:"Space Grotesk", sans-serif;
+      font-size:clamp(1.6rem, 3.5vw, 2.4rem);
+      margin-bottom:8px;
+      color:var(--white);
+    }
+
+    .stat span{
+      color:var(--muted);
+      line-height:1.5;
+      font-size:.95rem;
+    }
+
+    .hero-visual{
+      position:relative;
+      min-height:520px;
+      border-radius:28px;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 65% 20%, rgba(94,211,223,.26), transparent 22%),
+        radial-gradient(circle at 30% 80%, rgba(36,72,255,.23), transparent 30%),
+        linear-gradient(160deg, #10181d 0%, #0f1418 48%, #131d24 100%);
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    .hero-visual .logo-panel{
+      position:absolute;
+      inset:9% 10% auto 10%;
+      background:rgba(255,255,255,.96);
+      color:#102238;
+      border-radius:24px;
+      padding:32px 22px 26px;
+      box-shadow:0 28px 80px rgba(0,0,0,.28);
+      transform:rotate(-2deg);
+    }
+
+    .hero-visual .logo-panel h3{
+      color:#173155;
+      text-align:center;
+      margin-top:8px;
+      font-size:clamp(1.3rem, 2vw, 2rem);
+    }
+
+    .hero-visual .logo-panel p{
+      color:#38506f;
+      text-align:center;
+      margin-top:8px;
+      line-height:1.55;
+    }
+
+    .hero-visual .logo-panel .line{
+      width:72%;
+      height:2px;
+      margin:18px auto 10px;
+      background:linear-gradient(90deg, transparent, #0d294f, transparent);
+    }
+
+    .hero-visual .corner{
+      position:absolute;
+      right:-28px;
+      bottom:-30px;
+      width:220px;
+      height:220px;
+      background:
+        linear-gradient(145deg, transparent 0 38%, #62d8e3 38% 58%, transparent 58% 63%, #39b7ff 63% 81%, transparent 81% 84%, #2a23cf 84% 100%);
+      transform:rotate(8deg);
+      opacity:.96;
+      clip-path:polygon(26% 0, 100% 0, 100% 100%, 0 100%, 0 24%);
+      filter:drop-shadow(0 18px 24px rgba(0,0,0,.22));
+    }
+
+    .hero-visual .ring{
+      position:absolute;
+      left:50%;
+      top:54%;
+      transform:translate(-50%,-50%);
+      width:90%;
+      aspect-ratio:1/1;
+      border-radius:50%;
+      border:1px dashed rgba(255,255,255,.08);
+    }
+
+    .section-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+
+    .lead-block{
+      padding-right:min(4vw, 40px);
+    }
+
+    .big-quote{
+      margin-top:20px;
+      padding:22px 0 0;
+      border-top:1px solid rgba(255,255,255,.08);
+      font-size:clamp(1.15rem, 2vw, 1.45rem);
+      color:#e9f1f8;
+      line-height:1.6;
+      max-width:720px;
+    }
+
+    .feature-stack{
+      display:grid;
+      gap:14px;
+    }
+
+    .feature-row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:20px;
+      overflow:hidden;
+      background:rgba(255,255,255,.02);
+    }
+
+    .feature-row .left,
+    .feature-row .right{
+      padding:20px 18px;
+    }
+
+    .feature-row .left{
+      border-right:1px solid rgba(255,255,255,.08);
+    }
+
+    .feature-row strong{
+      display:block;
+      font-family:"Space Grotesk", sans-serif;
+      font-size:1.2rem;
+      line-height:1.25;
+      margin-bottom:8px;
+    }
+
+    .feature-row span{
+      color:var(--muted);
+      line-height:1.6;
+      font-size:.96rem;
+    }
+
+    .services-layout{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    .services-list{
+      display:grid;
+      gap:16px;
+    }
+
+    .service-item{
+      display:grid;
+      grid-template-columns:auto 1fr;
+      gap:16px;
+      align-items:start;
+      padding:18px 0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .service-badge{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      font-weight:800;
+      color:#072334;
+      background:linear-gradient(135deg, var(--teal), var(--cyan));
+      box-shadow:0 10px 24px rgba(94,211,223,.2);
+    }
+
+    .service-item strong{
+      display:block;
+      font-size:1.1rem;
+      margin-bottom:6px;
+      color:var(--white);
+    }
+
+    .service-art{
+      min-height:100%;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(circle at 68% 25%, rgba(124,231,255,.18), transparent 22%),
+        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)),
+        #11191f;
+      padding:22px;
+      display:grid;
+      align-content:space-between;
+      gap:22px;
+    }
+
+    .bridge-box{
+      padding:18px;
+      border-radius:20px;
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .bridge-box strong{
+      display:block;
+      font-family:"Space Grotesk", sans-serif;
+      font-size:1.25rem;
+      margin-bottom:8px;
+    }
+
+    .cn-line{
+      color:var(--accent);
+      font-weight:700;
+      letter-spacing:.03em;
+      margin-top:10px;
+    }
+
+    .leaders{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .leader{
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:24px;
+      overflow:hidden;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)),
+        var(--panel);
+      transform:translateY(0);
+      transition:.3s ease;
+    }
+
+    .leader:hover{
+      transform:translateY(-6px);
+      box-shadow:0 22px 44px rgba(0,0,0,.24);
+    }
+
+    .leader-head{
+      position:relative;
+      padding:24px 22px 18px;
+      min-height:180px;
+      background:
+        linear-gradient(160deg, #f8fbff 0%, #eef6ff 100%);
+      color:#07192a;
+      overflow:hidden;
+    }
+
+    .leader-head::after{
+      content:"";
+      position:absolute;
+      right:-18px;
+      bottom:-20px;
+      width:170px;
+      height:150px;
+      background:
+        linear-gradient(145deg, transparent 0 36%, #62d8e3 36% 56%, transparent 56% 61%, #39b7ff 61% 79%, transparent 79% 82%, #2a23cf 82% 100%);
+      transform:rotate(8deg);
+      opacity:.95;
+    }
+
+    .leader-role{
+      position:relative;
+      z-index:1;
+      display:inline-block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      color:#587094;
+      margin-bottom:12px;
+      font-weight:800;
+    }
+
+    .leader-head h3{
+      position:relative;
+      z-index:1;
+      font-size:clamp(1.15rem, 2vw, 1.8rem);
+      color:#081727;
+    }
+
+    .leader-head .subtitle{
+      position:relative;
+      z-index:1;
+      margin-top:8px;
+      color:#5f73a0;
+      font-size:.95rem;
+      line-height:1.55;
+    }
+
+    .leader-body{
+      padding:20px 22px 24px;
+    }
+
+    .leader-body p{
+      font-size:.95rem;
+    }
+
+    .leader-body .contact-mini{
+      margin-top:14px;
+      padding-top:14px;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:#dce7ef;
+      font-size:.92rem;
+      line-height:1.75;
+    }
+
+    .ops-block{
+      margin-top:18px;
+      padding:22px;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.1);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015)),
+        var(--panel-2);
+    }
+
+    .ops-grid{
+      margin-top:14px;
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:12px;
+    }
+
+    .ops-pill{
+      padding:14px 12px;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;
+      text-align:center;
+      color:#dbe6ef;
+      background:rgba(255,255,255,.02);
+      font-weight:600;
+      line-height:1.5;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .contact-panel{
+      display:grid;
+      gap:18px;
+      align-content:start;
+    }
+
+    .contact-panel .line-item{
+      padding:18px 0;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .contact-panel .line-item strong{
+      display:block;
+      color:var(--white);
+      margin-bottom:8px;
+      font-size:1rem;
+    }
+
+    .contact-card{
+      border-radius:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.1);
+      padding:28px;
+      display:grid;
+      gap:18px;
+      align-content:start;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .contact-card::after{
+      content:"";
+      position:absolute;
+      inset:auto -80px -90px auto;
+      width:240px;
+      height:240px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(124,231,255,.22), transparent 68%);
+      pointer-events:none;
+    }
+
+    .commitment{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:24px;
+      flex-wrap:wrap;
+      padding-top:12px;
+      border-top:1px solid rgba(255,255,255,.08);
+    }
+
+    .commitment strong{
+      font-family:"Space Grotesk", sans-serif;
+      font-size:clamp(1.25rem, 3vw, 2rem);
+      color:var(--white);
+    }
+
+    .footer-note{
+      color:#91a1af;
+      font-size:.9rem;
+    }
+
+    .slide-no{
+      position:absolute;
+      top:22px;
+      right:24px;
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:#d9e7f1;
+      border:1px solid rgba(255,255,255,.1);
+      background:rgba(255,255,255,.04);
+      font-family:"Space Grotesk", sans-serif;
+      font-size:.95rem;
+      z-index:2;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(28px);
+      transition:opacity .8s ease, transform .8s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger > *{
+      opacity:0;
+      transform:translateY(20px);
+      animation:rise .8s ease forwards;
+    }
+
+    .stagger > *:nth-child(1){animation-delay:.08s}
+    .stagger > *:nth-child(2){animation-delay:.18s}
+    .stagger > *:nth-child(3){animation-delay:.28s}
+    .stagger > *:nth-child(4){animation-delay:.38s}
+    .stagger > *:nth-child(5){animation-delay:.48s}
+    .stagger > *:nth-child(6){animation-delay:.58s}
+
+    @keyframes rise{
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    .btn-print{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      border:none;
+      cursor:pointer;
+      padding:14px 18px;
+      border-radius:999px;
+      color:#07192a;
+      font-weight:800;
+      background:linear-gradient(135deg, var(--teal), var(--accent));
+      box-shadow:0 16px 30px rgba(94,211,223,.22);
+      transition:.25s ease;
+      font-family:"Manrope", sans-serif;
+    }
+
+    .btn-print:hover{
+      transform:translateY(-2px) scale(1.02);
+      box-shadow:0 20px 38px rgba(94,211,223,.28);
+    }
+
+    .btn-print:active{transform:translateY(0) scale(.99)}
+
+    @media (max-width: 1100px){
+      .hero-grid,
+      .section-grid,
+      .services-layout,
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+      .leaders{grid-template-columns:1fr 1fr}
+      .ops-grid{grid-template-columns:repeat(2,1fr)}
+      .hero-visual{min-height:420px}
+    }
+
+    @media (max-width: 760px){
+      .deck{padding:18px 14px 60px}
+      .slide{min-height:auto; padding:18px 0}
+      .slide-inner{padding:22px}
+      .hero-stats{grid-template-columns:1fr}
+      .feature-row{grid-template-columns:1fr}
+      .feature-row .left{border-right:none; border-bottom:1px solid rgba(255,255,255,.08)}
+      .leaders{grid-template-columns:1fr}
+      .ops-grid{grid-template-columns:1fr}
+      .topbar-inner{justify-content:center}
+      .nav-dots{justify-content:center}
+      .hero-visual .logo-panel{
+        inset:8% 6% auto 6%;
+        transform:none;
+      }
+      .slide-no{
+        width:38px;height:38px;font-size:.82rem;
+        top:16px;right:16px;
+      }
+    }
+
+    @media print{
+      .topbar{display:none}
+      body{background:#fff;color:#000}
+      body::before{display:none}
+      .deck{width:100%;max-width:none;padding:0}
+      .slide{
+        min-height:auto;
+        break-inside:avoid;
+        page-break-inside:avoid;
+        padding:0;
+        margin:0 0 18px;
+      }
+      .frame{
+        box-shadow:none;
+        background:#fff;
+        border:1px solid #d6dce2;
+      }
+      p, .footer-note, .brand-mini-text span, .nav-dots a{color:#4c5b68}
+      .leader, .contact-card, .ops-block, .service-art{box-shadow:none}
+      .btn-print{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar" aria-label="Navigasi presentasi">
+    <div class="topbar-inner">
+      <div class="brand-mini">
+        <div class="brand-mini">
+    <img src="./PT HETACO BELAGUYAN KONSULTAN 22— Company Profile Presentation_files/logo.png" alt="Logo" height="44" width="44" class="logo">
+</div>
+
+        <div class="brand-mini-text">
+          <strong>PT HETACO BELAGUYAN KONSULTAN</strong>
+          <span>Corporate Solutions | ESDM Investment &amp; Project Advisory</span>
+        </div>
+      </div>
+      <nav class="nav-dots" aria-label="Daftar slide">
+        <a href="file:///C:/Users/ASUS/Downloads/PT_HETACO_BELAGUYAN_KONSULTAN_Profile.html#slide-1">Cover</a>
+        <a href="file:///C:/Users/ASUS/Downloads/PT_HETACO_BELAGUYAN_KONSULTAN_Profile.html#slide-2">Overview</a>
+        <a href="file:///C:/Users/ASUS/Downloads/PT_HETACO_BELAGUYAN_KONSULTAN_Profile.html#slide-3">Services</a>
+        <a href="file:///C:/Users/ASUS/Downloads/PT_HETACO_BELAGUYAN_KONSULTAN_Profile.html#slide-4">Management</a>
+        <a href="file:///C:/Users/ASUS/Downloads/PT_HETACO_BELAGUYAN_KONSULTAN_Profile.html#slide-5">Contact</a>
+        <button class="btn-print" onclick="window.print()" aria-label="Cetak atau simpan sebagai PDF">
+          Cetak / PDF
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="deck">
+    <section class="slide reveal visible" id="slide-1" aria-labelledby="title-slide">
+      <div class="frame">
+        <div class="slide-no">01</div>
+        <div class="slide-inner hero-grid">
+          <div class="hero-copy stagger">
+            <div class="hero-title-wrap">
+              <div class="eyebrow">Company Profile Presentation</div>
+              <h1 id="title-slide">PT HETACO BELAGUYAN KONSULTAN</h1>
+              <p class="sub">
+                Corporate Solutions | ESDM Investment &amp; Project Advisory
+              </p>
+              <p class="cn">企业咨询顾问服务</p>
+            </div>
+
+            <div class="hero-stats" aria-label="Ringkasan perusahaan">
+              <div class="stat">
+                <strong>Jakarta</strong>
+                <span>Based project consulting firm for mining, energy, infrastructure, and industrial sectors.</span>
+              </div>
+              <div class="stat">
+                <strong>ESDM</strong>
+                <span>Recognized partner for investment initiatives, permits, licensing, and compliance pathways.</span>
+              </div>
+              <div class="stat">
+                <strong>95%</strong>
+                <span>Project execution focus on critical deadlines and financial target achievement.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal visible" aria-label="Visual logo perusahaan">
+            <div class="ring"></div>
+            <div class="logo-panel">
+              <img src="./PT HETACO BELAGUYAN KONSULTAN 22— Company Profile Presentation_files/logo(1).png" alt="Logo Hetaco Belaguyan" style="width:80%; height:auto;" .hero-visual="" .logo-panel="" img="" {="" position:="" absolute;="" inset:="" 8%="" 6%="" auto="" 6%;="" *="" atur="" posisi="" panel="" background:="" rgba(255,255,255,.96);="" color:="" #102238;="" border-radius:="" 24px;="" padding:="" 32px="" 22px="" 26px;="" box-shadow:="" 0="" 28px="" 80px="" rgba(0,0,0,.28);="" transform:="" rotate(-2deg);="" efek="" miring="" playful="" }="" @media="" (max-width:="" 600px)="" max-width:="" 80%;="">
+                <defs>
+                  <lineargradient id="logoGrad" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#133d71"></stop>
+                    <stop offset="50%" stop-color="#1aa5dc"></stop>
+                    <stop offset="50%" stop-color="#78e8ef"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M77 108c26-43 78-60 138-50-31 4-50 19-59 43 41 2 80 17 114 44-43-9-82-10-117 1 14 16 31 27 51 34-42 0-77-20-101-69-10-19-14-38-26-58z" fill="url(#logoGrad)"></path>
+                <path d="M123 146c42 16 84 9 128-24-20 35-52 55-96 61-24 3-45-4-67-20 11-4 22-10 35-17z" fill="#1f4f86"></path>
+              
+              <h3>HETACO BELAGUYAN</h3>
+              <div class="line"></div>
+              <p>Corporate Solutions 企业咨询顾问服务</p>
+              <p>ESDM招商引资工作先进单位</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide reveal visible" id="slide-2" aria-labelledby="overview-title">
+      <div class="frame">
+        <div class="slide-no">02</div>
+        <div class="slide-inner section-grid">
+          <div class="lead-block stagger">
+            <div class="eyebrow">Company Overview</div>
+            <h2 id="overview-title">Mitra konsultasi proyek untuk investasi yang lebih terarah, aman, dan bankable.</h2>
+            <p style="margin-top:20px;">
+              Navigating Indonesia’s complex project landscape requires more than expertise—it demands a partner you can trust.
+            </p>
+            <p style="margin-top:16px;">
+              PT HETACO BELAGUYAN KONSULTAN adalah perusahaan konsultan proyek berbasis Jakarta yang berfokus pada sektor pertambangan, energi, infrastruktur, dan industri. Kami menghadirkan solusi end-to-end untuk membantu investor, pemilik proyek, dan mitra strategis menurunkan risiko, mempercepat proses perizinan, serta meningkatkan kepastian eksekusi sejak tahap feasibility hingga implementation.
+            </p>
+            <div class="big-quote">
+              <strong style="display:block;color:var(--white);font-family:&#39;Space Grotesk&#39;,sans-serif;margin-bottom:8px;">Why Global Investors Choose Us</strong>
+              Kedalaman regulasi ESDM, project structuring yang bankable, pengawasan EPC yang disiplin, dan kemampuan menjembatani kebutuhan foreign investors–Indonesia secara strategis.
+            </div>
+          </div>
+
+          <div class="feature-stack stagger" aria-label="Keunggulan perusahaan">
+            <div class="feature-row">
+              <div class="left">
+                <strong>ESDM &amp; Regulatory Mastery</strong>
+                <span>Keahlian dalam mining permits, energy licensing, dan government compliance.</span>
+              </div>
+              <div class="right">
+                <strong>So You Get</strong>
+                <span>Jalur investasi yang lebih jelas, percepatan approval, dan minim hambatan administratif.</span>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="left">
+                <strong>Bankable Project Structuring</strong>
+                <span>Feasibility studies, due diligence, dan project packaging yang kredibel.</span>
+              </div>
+              <div class="right">
+                <strong>So You Get</strong>
+                <span>Dokumen dan struktur proyek yang lebih siap ditinjau lender, regulator, dan stakeholder.</span>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="left">
+                <strong>Proven Execution &amp; Risk Mitigation</strong>
+                <span>EPC management dan contractor oversight yang disiplin terhadap target.</span>
+              </div>
+              <div class="right">
+                <strong>So You Get</strong>
+                <span>95% orientasi performa terhadap ketepatan waktu dan target finansial proyek.</span>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="left">
+                <strong>Strategic China-Indonesia Bridge</strong>
+                <span>Corporate advisory khusus untuk cross-border investment.</span>
+              </div>
+              <div class="right">
+                <strong>So You Get</strong>
+                <span>企业咨询顾问服务 + bilingual support untuk komunikasi, struktur, dan negosiasi lintas negara.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide reveal visible" id="slide-3" aria-labelledby="services-title">
+      <div class="frame">
+        <div class="slide-no">03</div>
+        <div class="slide-inner services-layout">
+          <div class="stagger">
+            <div class="eyebrow">Core Services</div>
+            <h2 id="services-title">Layanan inti yang dirancang untuk menurunkan risiko dan mempercepat ROI.</h2>
+
+            <div class="services-list" style="margin-top:28px;">
+              <div class="service-item">
+                <div class="service-badge">01</div>
+                <div>
+                  <strong>Project Feasibility Studies &amp; Due Diligence</strong>
+                  <p>Analisis kelayakan proyek, evaluasi teknis dan finansial, serta due diligence untuk memastikan proyek layak secara komersial dan kredibel di mata stakeholder.</p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-badge">02</div>
+                <div>
+                  <strong>Licensing, Permits &amp; ESDM Compliance</strong>
+                  <p>Pendampingan menyeluruh untuk perizinan, lisensi, dan kepatuhan sektor ESDM agar proses investasi berjalan lebih efisien dan sesuai regulasi.</p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-badge">03</div>
+                <div>
+                  <strong>EPC Management &amp; Contractor Oversight</strong>
+                  <p>Pengelolaan pelaksanaan proyek dan pengawasan kontraktor untuk menjaga kualitas, timeline, pengendalian biaya, dan akuntabilitas eksekusi.</p>
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-badge">04</div>
+                <div>
+                  <strong>Investment Risk Mitigation &amp; Government Relations</strong>
+                  <p>Strategi mitigasi risiko investasi dan hubungan kelembagaan untuk membuka akses koordinasi yang lebih efektif di tingkat kementerian maupun daerah.</p>
+                </div>
+              </div>
+              <div class="service-item" style="border-bottom:none;">
+                <div class="service-badge">05</div>
+                <div>
+                  <strong>Corporate Solutions for Foreign Investors</strong>
+                  <p>Solusi advisory korporasi yang disesuaikan bagi investor asing, termasuk dukungan komunikasi bilingual dan strategi masuk pasar Indonesia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="service-art reveal visible" aria-label="Sorotan nilai perusahaan">
+            <div>
+              <div class="eyebrow">Investor Value</div>
+              <h3>We Handle Complexity.<br>So You Gain Clarity.</h3>
+            </div>
+
+            <div class="bridge-box">
+              <strong>Mining, Energy, Infrastructure, Industrial</strong>
+              <p>Empat sektor utama dengan kebutuhan regulasi dan eksekusi yang tinggi—ditangani melalui advisory yang tajam dan implementatif.</p>
+            </div>
+
+            <div class="bridge-box">
+              <strong>Government Access &amp; Strategic Coordination</strong>
+              <p>Koordinasi lintas otoritas untuk memperjelas alur investasi, izin, dan readiness proyek.</p>
+            </div>
+
+            <div class="bridge-box">
+              <strong>China–Indonesia Bridge</strong>
+              <p>Tailored corporate advisory untuk kebutuhan investor lintas negara.</p>
+              <div class="cn-line">企业咨询顾问服务</div>
+            </div>
+
+            <div class="commitment">
+              <div>
+                <span class="eyebrow" style="margin-bottom:8px;">Our Commitment</span>
+                <strong>Engineering Trust. Delivering Growth.</strong>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide reveal visible" id="slide-4" aria-labelledby="management-title">
+      <div class="frame">
+        <div class="slide-no">04</div>
+        <div class="slide-inner">
+          <div class="eyebrow">Management Team</div>
+          <h2 id="management-title" style="max-width:920px;">Kepemimpinan yang menggabungkan advisory strategis, pengalaman proyek, dan orientasi eksekusi.</h2>
+
+          <div class="leaders" style="margin-top:28px;">
+            <article class="leader reveal visible">
+              <div class="leader-head">
+                <div class="leader-role">Komisaris Utama</div>
+                <h3>Mrs. Belina Andra</h3>
+                <div class="subtitle">Principle Project Consultant · 高级顾问 · Commissioner</div>
+              </div>
+              <div class="leader-body">
+                <p>
+                  Memimpin penguatan arah strategis perusahaan, hubungan profesional, serta pengembangan advisory yang berorientasi pada kepercayaan dan pertumbuhan berkelanjutan.
+                </p>
+                <div class="contact-mini">
+                  <div><strong style="font-size:.86rem;display:block;color:#8aa0b6;margin-bottom:6px;">Contact</strong></div>
+                  <div>+62 856 9290 4584</div>
+                  
+                </div>
+              </div>
+            </article>
+
+            <article class="leader reveal visible">
+              <div class="leader-head">
+                <div class="leader-role">President Direktur</div>
+                <h3>Mr. Gurhadi Kartasasmita</h3>
+                <div class="subtitle">Lead Project Consultant · 项目首席顾问</div>
+              </div>
+              <div class="leader-body">
+                <p>
+                  Mengarahkan strategi bisnis dan pelaksanaan advisory proyek secara menyeluruh, dengan fokus pada struktur investasi, kepatuhan, dan pencapaian target proyek yang terukur.
+                </p>
+                <div class="contact-mini">
+                  <div><strong style="font-size:.86rem;display:block;color:#8aa0b6;margin-bottom:6px;">Leadership Focus</strong></div>
+                  <div>Project Advisory</div>
+                  <div>Investment Strategy</div>
+                  <div>EPC Oversight</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="leader reveal visible">
+              <div class="leader-head">
+                <div class="leader-role">Operational Directors Team</div>
+                <h3>Jajaran Direktur Operasional</h3>
+                <div class="subtitle">Team Hetaco Belaguyan</div>
+              </div>
+              <div class="leader-body">
+                <p>
+                  Tim operasional mendukung implementasi layanan perusahaan secara terkoordinasi, mulai dari pengurusan izin, dokumentasi proyek, pengawasan lapangan, hingga relasi institusional.
+                </p>
+                <div class="contact-mini">
+                  <div><strong style="font-size:.86rem;display:block;color:#8aa0b6;margin-bottom:6px;">Operational Scope</strong></div>
+                  <div>Permits &amp; Compliance</div>
+                  <div>Feasibility Support</div>
+                  <div>Field Coordination</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="ops-block reveal visible">
+            <h3>Fungsi Jajaran Direktur Operasional Team Hetaco Belaguyan</h3>
+            <p style="margin-top:10px;">
+              Mendukung kesinambungan eksekusi proyek melalui koordinasi lintas fungsi dan respons operasional yang cepat terhadap kebutuhan investor dan stakeholder proyek.
+            </p>
+            <div class="ops-grid">
+              <div class="ops-pill">Project Coordination</div>
+              <div class="ops-pill">Licensing Support</div>
+              <div class="ops-pill">Contractor Oversight</div>
+              <div class="ops-pill">Regulatory Follow-up</div>
+              <div class="ops-pill">Documentation Control</div>
+              <div class="ops-pill">Stakeholder Liaison</div>
+              <div class="ops-pill">Site Monitoring</div>
+              <div class="ops-pill">Reporting &amp; Review</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide reveal visible" id="slide-5" aria-labelledby="contact-title">
+      <div class="frame">
+        <div class="slide-no">05</div>
+        <div class="slide-inner contact-grid">
+          <div class="contact-panel stagger">
+            <div class="eyebrow">Contact &amp; Corporate Information</div>
+            <h2 id="contact-title">Siap menjadi mitra konsultasi untuk investasi dan proyek Anda di Indonesia.</h2>
+
+            <div class="line-item">
+              <strong>Nama Perusahaan</strong>
+              <p>PT. HETACO BELAGUYAN Konsultan</p>
+            </div>
+
+            <div class="line-item">
+              <strong>Alamat</strong>
+              <p>Jl. Sigura-gura II, RT.11/RW.1, Duren Tiga, Kec. Pancoran, South Jakarta, 12760, Indonesia</p>
+            </div>
+
+            <div class="line-item">
+              <strong>Email</strong>
+              <p><a href="mailto:HETAbelaguyan@gmail.com" style="color:var(--accent);text-decoration:none;">HETAbelaguyan@gmail.com</a></p>
+            </div>
+
+            <div class="line-item">
+              <strong>Representatif Utama</strong>
+              <p>Mrs. Belina Andra — Komisaris Utama</p>
+              <p>Mr. Gurhadi Kartasasmita — President Direktur</p>
+            </div>
+
+            <div class="commitment">
+              <div>
+                <span class="eyebrow" style="margin-bottom:8px;">Tagline</span>
+                <strong>Engineering Trust. Delivering Growth.</strong>
+              </div>
+              <div class="footer-note">All Rights Reserved @2025</div>
+            </div>
+          </div>
+
+          <aside class="contact-card reveal visible" aria-label="Kartu penutup presentasi">
+  <img src="./PT HETACO BELAGUYAN KONSULTAN 22— Company Profile Presentation_files/logo(1).png" alt="Logo Hetaco Belaguyan">
+  <div class="contact-info">
+    <h3>Hetaco Belaguyan</h3>
+    <p>Email: info@hetaco.com</p>
+    <p>Telepon: +62 812-3456-7890</p>
+  </div>
+</aside>
+
+
+              <aside class="contact-card reveal visible" aria-label="Kartu penutup presentasi">
+  <svg viewBox="0 0 360 220" width="100%" height="160" aria-hidden="true"></svg>
+  <div></div>
+</aside>
+<defs>
+                <lineargradient id="logoGrad2" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#143a6b"></stop>
+                  <stop offset="48%" stop-color="#1ca2db"></stop>
+                  <stop offset="100%" stop-color="#79e8f0"></stop>
+                </lineargradient>
+              </defs>
+              <path d="M77 108c26-43 78-60 138-50-31 4-50 19-59 43 41 2 80 17 114 44-43-9-82-10-117 1 14 16 31 27 51 34-42 0-77-20-101-69-10-19-14-38-26-58z" fill="url(#logoGrad2)"></path>
+              <path d="M123 146c42 16 84 9 128-24-20 35-52 55-96 61-24 3-45-4-67-20 11-4 22-10 35-17z" fill="#1d4b80"></path>
+            
+
+            <div>
+              <h3 style="font-size:clamp(1.4rem,2.5vw,2.1rem);">HETACO BELAGUYAN</h3>
+              <p style="margin-top:10px;">Corporate Solutions | ESDM Investment &amp; Project Advisory</p>
+              <p class="cn-line">企业咨询顾问服务</p>
+            </div>
+
+            <div style="padding-top:8px;border-top:1px solid rgba(255,255,255,.08);">
+              <p><strong style="color:var(--white);display:block;margin-bottom:6px;">Business Positioning</strong></p>
+              <p>Trusted consulting partner for mining, energy, infrastructure, and industrial investment projects in Indonesia.</p>
+            </div>
+
+            <div style="padding-top:8px;border-top:1px solid rgba(255,255,255,.08);">
+              <p><strong style="color:var(--white);display:block;margin-bottom:6px;">Closing Statement</strong></p>
+              <p>We help investors move from uncertainty to structured execution—with clarity, compliance, and confidence.</p>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+
+</body></html>
